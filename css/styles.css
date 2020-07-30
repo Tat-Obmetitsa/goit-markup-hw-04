@@ -18,6 +18,7 @@ body {
 	--white-text-color: #ffffff;
 	--button-bcg-color: #2196f3;
 	--secondary-bcg-color: #F5F4FA;
+	--icon-color: #AFB1B8;
 
 }
 
@@ -27,7 +28,7 @@ body {
 	list-style: none;
 }
 a[href] {
-	color: var(--primary-text-color);
+	
 	text-decoration: none;
 }
 a[href]:hover,
@@ -134,8 +135,14 @@ a[href]:focus {
 
 .contacts-item + .contacts-item {
 	margin-left: 50px;
+	fill: var(--icon-color);
+	background-color: #fff;
+	background-size: 15px 10px;
 }
-
+.contacts-item:hover, .contacts-item:focus {
+	fill: var(--accent-text-color);
+	background-color: #fff;
+}
 .head-contacts .link {
 	display: block;
 	padding-top: 32px;
@@ -194,6 +201,7 @@ a[href]:focus {
 	width: 270px;
 	background-color: var(--secondary-bcg-color);
 	border-radius: 4px;
+	fill: var(--icon-color);
 	}
 .benefits-item + .benefits-item {
 	margin-left: 30px;
@@ -229,6 +237,7 @@ a[href]:focus {
 	margin-left: 30px;
 	width: 370px;
 }
+
 .duties-text {
 	font-family: Roboto, sans-serif;
 	font-weight: 700;
@@ -265,7 +274,6 @@ a[href]:focus {
 .team-list .header {
 	margin-top: 30px;
 	margin-bottom: 10px;
-
 	color: var(--primary-text-color);
 	font-weight: 500;
 	font-size: 16px;
@@ -283,12 +291,33 @@ a[href]:focus {
 }
 .team-networks {
 	display: flex;
+}
+.team-networks-item:not(:last-child) {
+	margin-right: 10px;
+}
+.team-networks-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	margin-top: 16px;
+	height: 44px;
+	width: 44px;
+	background-color: var(--secondary-bcg-color);
+	border-radius: 50%;
+	background-position: center;
+}
+.team-icon {
+	fill: var(--icon-color);
+}
+.team-networks-item:hover, .team-networks-item:focus {
+	background-color: var(--accent-text-color);
+}
+.team-icon:hover, .team-icon:focus {
+	fill: var(--white-text-color);
 }
 /* Клиенты */
 .clients-list {
 	display: flex;
-	justify-content: center;
 }
 .clients {
 	padding-bottom: 94px;
@@ -301,12 +330,23 @@ a[href]:focus {
 	width: 170px;
 	border: 1px solid #AFB1B8;
 	border-radius: 4px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .clients-icon {
 	display: block;
 	background-repeat: no-repeat;
 	background-position: center;
-
+	background-color: white;
+	fill: var(--icon-color);
+}
+.clients-item:hover, .clients-item:focus {
+	border: 1px solid #2196F3;
+	border-radius: 4px;
+}
+.clients-icon:hover, .clients-icon:focus {
+	fill: var(--accent-text-color);
 }
 /* Портфолио */
 .portfolio-container {
@@ -460,17 +500,8 @@ a[href]:focus {
 .networks-item:hover, .networks-item:focus {
 	background-color: var(--accent-text-color);
 }
-.networks-item:nth-child(1) {
-	background-image: url('../images/inter-logo/instagram-2.svg');
-}
-.networks-item:nth-child(2) {
-	background-image: url('../images/inter-logo/twitter-1.svg');
-}
-.networks-item:nth-child(3) {
-	background-image: url('../images/inter-logo/facebook-1.svg');
-}
-.networks-item:nth-child(4) {
-	background-image: url('../images/inter-logo/linkedin-1.svg');
+.footer-icon {
+	fill: var(--white-text-color);
 }
 .networks-item:not(:last-child) {
 	margin-right: 10px;
