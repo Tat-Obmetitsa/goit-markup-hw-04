@@ -92,6 +92,9 @@ a[href]:focus {
 .logo-accent {
 	color: var(--accent-text-color);
 }
+.logo-accent-footer {
+	color: var(--white-text-color);
+}
 /* Шапка */
 .head-container {
 	display: inline-flex;
@@ -130,19 +133,35 @@ a[href]:focus {
 }
 .head-contacts {
 	display: flex;
-	margin-left: 331px;
+	margin-left: 305px;
 }
+.contacts-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-.contacts-item + .contacts-item {
-	margin-left: 50px;
+}
+.contacts-item > svg {
+	display: flex;
+	justify-content: last baseline;
 	fill: var(--icon-color);
 	background-color: #fff;
 	background-size: 15px 10px;
+	margin-right: 10px;
 }
+.contacts-item > svg:hover, .contacts-item > svg:focus {
+	fill: var(--accent-text-color);
+}
+.contacts-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .contacts-item:hover, .contacts-item:focus {
 	fill: var(--accent-text-color);
+	color: var(--accent-text-color);
 	background-color: #fff;
 }
+
 .head-contacts .link {
 	display: block;
 	padding-top: 32px;
@@ -195,14 +214,22 @@ a[href]:focus {
 }
 .benefits-item {
 	width: 270px;
+	
 }
-.benefits-icon {
+.benefits-bg {
+	display: flex;
+	justify-content: center;
+	align-content: center;
 	height: 120px;
 	width: 270px;
 	background-color: var(--secondary-bcg-color);
-	border-radius: 4px;
+	background-position: center;
+}
+.benefits-icon {
 	fill: var(--icon-color);
-	}
+	background-position: center;
+}
+
 .benefits-item + .benefits-item {
 	margin-left: 30px;
 }
@@ -305,14 +332,11 @@ a[href]:focus {
 	background-color: var(--secondary-bcg-color);
 	border-radius: 50%;
 	background-position: center;
-}
-.team-icon {
 	fill: var(--icon-color);
 }
+
 .team-networks-item:hover, .team-networks-item:focus {
 	background-color: var(--accent-text-color);
-}
-.team-icon:hover, .team-icon:focus {
 	fill: var(--white-text-color);
 }
 /* Клиенты */
@@ -335,19 +359,18 @@ a[href]:focus {
 	align-items: center;
 }
 .clients-icon {
-	display: block;
-	background-repeat: no-repeat;
-	background-position: center;
 	background-color: white;
 	fill: var(--icon-color);
-}
-.clients-item:hover, .clients-item:focus {
-	border: 1px solid #2196F3;
-	border-radius: 4px;
 }
 .clients-icon:hover, .clients-icon:focus {
 	fill: var(--accent-text-color);
 }
+.clients-item:hover, .clients-item:focus {
+	border: 1px solid #2196F3;
+	border-radius: 4px;
+	fill: var(--accent-text-color);
+}
+
 /* Портфолио */
 .portfolio-container {
 	padding-top: 94px;
@@ -534,18 +557,15 @@ a[href]:focus {
 	text-align: center;
 	line-height: 1.9;
 	letter-spacing: 0.06em;
+	width: 200px;
+	height: 50px;
 	}
 .email-item .button:hover, .email-item .button:focus {
 	color: var(--white-text-color);
 }
-.email-item .button::after {
-	content: "";
-	width: 24px;
-	height: 24px;
-	margin-left: 10px;
-	background-size: contain;
-	background-image: url("../images/inter-logo/button-icon.svg");
+
+.twitter-button {
+	fill: var(--white-text-color);
 	background-color: var(--accent-text-color);
-	background-position: center;
-	display: inline-block;
+	margin-left: 10px;
 }

@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="./css/normalize.css" />
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
-
 	<body>
 		<!-- Шапка -->
 		<header>
@@ -40,14 +39,16 @@
 						</nav>
 					</div>
 					<ul class="head-contacts list">
-						<li class="contacts-item">
-							<svg class="envelope-icon" height="11.2" width="16">
+						<li class="contacts-item mail">
+							<svg class="envelope-icon" height="11.2" width="16" aria-label="Электронная почта">
 								<use href="./images/sprite.svg#envelope"></use>
 							</svg>
 							<a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
 						</li>
-						<li class="contacts-item">
-							<svg class="phone-icon" height="15" width="10"><use href="./images/sprite.svg#smartphone"></use></svg>
+						<li class="contacts-item tel">
+							<svg class="phone-icon" height="15" width="10" aria-label="Номер телефона">
+								<use href="./images/sprite.svg#smartphone"></use>
+							</svg>
 							<a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
 						</li>
 					</ul>
@@ -71,34 +72,44 @@
 					<h2 hidden>Наши преимущества</h2>
 					<ul class="benefits-list list">
 						<li class="benefits-item">
-							<svg class="benefits-icon"><use href="./images/sprite.svg#antenna-1" height="70" width="70"></use></svg>
+							<div class="benefits-bg">
+								<svg class="benefits-icon">
+									<use href="./images/sprite.svg#antenna-1" height="70" width="70"></use>
+								</svg>
+							</div>
 							<h3 class="header">Внимание к деталям</h3>
 							<p class="text">
 								Идейные соображения, а также начало повседневной работы по формированию позиции.
 							</p>
 						</li>
 						<li class="benefits-item">
-							<svg class="benefits-icon">
-								<use href="./images/sprite.svg#clock-1" height="70" width="70"></use>
-							</svg>
+							<div class="benefits-bg">
+								<svg class="benefits-icon">
+									<use href="./images/sprite.svg#clock-1" height="70" width="70"></use>
+								</svg>
+							</div>
 							<h3 class="header">Пунктуальность</h3>
 							<p class="text">
 								Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
 							</p>
 						</li>
 						<li class="benefits-item">
-							<svg class="benefits-icon">
-								<use href="./images/sprite.svg#laptop-1" height="70" width="70"></use>
-							</svg>
+							<div class="benefits-bg">
+								<svg class="benefits-icon">
+									<use href="./images/sprite.svg#laptop-1" height="70" width="70"></use>
+								</svg>
+							</div>
 							<h3 class="header">Планирование</h3>
 							<p class="text">
 								Равным образом консультация с широким активом в значительной степени обуславливает.
 							</p>
 						</li>
 						<li class="benefits-item">
-							<svg class="benefits-icon">
-								<use href="./images/sprite.svg#astronaut-1" height="70" width="70"></use>
-							</svg>
+							<div class="benefits-bg">
+								<svg class="benefits-icon">
+									<use href="./images/sprite.svg#astronaut-1" height="70" width="70"></use>
+								</svg>
+							</div>
 							<h3 class="header">Современные технологии</h3>
 							<p class="text">
 								Значимость этих проблем настолько очевидна, что реализация плановых заданий.
@@ -145,7 +156,7 @@
 										rel="noopener noreferrer"
 										aria-label="Ссылка на инстаграм"
 									>
-										<svg class="team-icon" height="20" width="20">
+										<svg class="team-icon" height="20" width="20" aria-label="Инстаграм Николая">
 											<use href="./images/sprite.svg#instagram-2"></use>
 										</svg>
 									</a>
@@ -158,7 +169,7 @@
 										rel="noopener noreferrer"
 										aria-label="Ссылка на твиттер"
 									>
-										<svg class="team-icon" height="20" width="20">
+										<svg class="team-icon" height="20" width="20" aria-label="Твиттер Николая">
 											<use href="./images/sprite.svg#twitter-1"></use>
 										</svg>
 									</a>
@@ -172,7 +183,7 @@
 										aria-label="Ссылка на фейсбук"
 									>
 										<svg class="team-icon" height="20" width="20">
-											<use href="./images/sprite.svg#facebook-1"></use>
+											<use href="./images/sprite.svg#facebook-1" aria-label="Фейсбук Николая"></use>
 										</svg>
 									</a>
 								</li>
@@ -185,7 +196,7 @@
 										aria-label="Ссылка на линкед ин"
 									>
 										<svg class="team-icon" height="20" width="20">
-											<use href="./images/sprite.svg#linkedin-1"></use>
+											<use href="./images/sprite.svg#linkedin-1" aria-label="Линкед ин Николая"></use>
 										</svg>
 									</a>
 								</li>
@@ -429,7 +440,7 @@
 					<a href="./index.html">
 						<span class="logo">
 							<span class="logo-accent">Web</span>
-							Studio
+							<span class="logo-accent-footer">Studio</span>
 						</span>
 					</a>
 					<address class="address-list">
@@ -509,7 +520,10 @@
 							<textarea class="email-text">E-mail</textarea>
 						</li>
 						<li class="email-item">
-							<a href="https://www.twitter.com" class="button" target="_blank" rel="noopener noreferrer">Подписаться</a>
+							<a href="https://www.twitter.com" class="button" target="_blank" rel="noopener noreferrer">
+								Подписаться
+								<svg class="twitter-button" height="24" width="24"><use href="./images/sprite#button-icon"></use></svg>
+							</a>
 						</li>
 					</ul>
 				</div>
