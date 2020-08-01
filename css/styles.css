@@ -134,6 +134,7 @@ a[href]:focus {
 .head-contacts {
 	display: flex;
 	margin-left: 305px;
+	color: (var(--primary-text-color));
 }
 .contacts-item {
 	display: flex;
@@ -143,15 +144,12 @@ a[href]:focus {
 }
 .contacts-item > svg {
 	display: flex;
-	justify-content: last baseline;
-	fill: var(--icon-color);
+	fill: currentColor;
 	background-color: #fff;
 	background-size: 15px 10px;
 	margin-right: 10px;
 }
-.contacts-item > svg:hover, .contacts-item > svg:focus {
-	fill: var(--accent-text-color);
-}
+
 .contacts-item:not(:last-child) {
 	margin-right: 30px;
 }
@@ -226,7 +224,7 @@ a[href]:focus {
 	background-position: center;
 }
 .benefits-icon {
-	fill: var(--icon-color);
+	fill: black;
 	background-position: center;
 }
 
@@ -318,6 +316,8 @@ a[href]:focus {
 }
 .team-networks {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .team-networks-item:not(:last-child) {
 	margin-right: 10px;
@@ -337,7 +337,12 @@ a[href]:focus {
 
 .team-networks-item:hover, .team-networks-item:focus {
 	background-color: var(--accent-text-color);
-	fill: var(--white-text-color);
+	fill: var(--white-text-color);}
+.team-icon {
+	fill: var(--icon-color);
+}
+.team-icon:hover {
+	fill: white;
 }
 /* Клиенты */
 .clients-list {
@@ -550,6 +555,7 @@ a[href]:focus {
 	width: 358px;
 	height: 50px;
 }
+
 .email-item .button {
 	padding: 10px 10px 10px 29px;
 	margin-left: 12px;
@@ -565,7 +571,5 @@ a[href]:focus {
 }
 
 .twitter-button {
-	fill: var(--white-text-color);
-	background-color: var(--accent-text-color);
 	margin-left: 10px;
 }
