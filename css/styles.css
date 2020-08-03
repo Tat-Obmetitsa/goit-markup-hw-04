@@ -194,12 +194,12 @@ a[href]:focus {
 	height: 600px;
 	max-width: 1600px;
 	padding-top: 200px;
+	padding-bottom: 200px;
 	margin-left: auto;
 	margin-right: auto;
 }
 .banner-title {
 	margin-top: 0;
-	margin-bottom: 30px;
 	color: var(--white-text-color);
 	font-weight: 900;
 	font-size: 44px;
@@ -207,11 +207,10 @@ a[href]:focus {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 }
-.banner-title > p {
-	margin: 0;
-}
+
 .banner-button {
 	margin-top: 30px;
+	
 }
 /* Преимущества */
 .benefits-list {
