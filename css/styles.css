@@ -35,6 +35,16 @@ a[href]:hover,
 a[href]:focus {
 	color: var(--accent-text-color);
 }
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
 /* Containers */
 .container {
 	margin-left: auto;
@@ -140,11 +150,10 @@ a[href]:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	fill: currentColor;
 }
 .contacts-item > svg {
 	display: flex;
-	fill: currentColor;
 	background-color: #fff;
 	background-size: 15px 10px;
 	margin-right: 10px;
@@ -212,22 +221,17 @@ a[href]:focus {
 }
 .benefits-item {
 	width: 270px;
-	
+	width: calc((100% - 90px) / 4);
 }
 .benefits-bg {
 	display: flex;
 	justify-content: center;
-	align-content: center;
-	height: 120px;
-	width: 270px;
+	align-items: center;
 	background-color: var(--secondary-bcg-color);
-	background-position: center;
 }
 .benefits-icon {
 	fill: black;
-	background-position: center;
 }
-
 .benefits-item + .benefits-item {
 	margin-left: 30px;
 }
@@ -322,7 +326,7 @@ a[href]:focus {
 .team-networks-item:not(:last-child) {
 	margin-right: 10px;
 }
-.team-networks-item {
+.team-networks-item .link{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -335,15 +339,9 @@ a[href]:focus {
 	fill: var(--icon-color);
 }
 
-.team-networks-item:hover, .team-networks-item:focus {
+.team-networks-item .link:hover, .team-networks-item .link:focus {
 	background-color: var(--accent-text-color);
 	fill: var(--white-text-color);}
-.team-icon {
-	fill: var(--icon-color);
-}
-.team-icon:hover {
-	fill: white;
-}
 /* Клиенты */
 .clients-list {
 	display: flex;
@@ -354,7 +352,7 @@ a[href]:focus {
 .clients-item:not(:last-child) {
 	margin-right: 30px;
 }
-.clients-item {
+.clients-item .link {
 	height: 90px;
 	width: 170px;
 	border: 1px solid #AFB1B8;
@@ -362,15 +360,11 @@ a[href]:focus {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-.clients-icon {
 	background-color: white;
 	fill: var(--icon-color);
 }
-.clients-icon:hover, .clients-icon:focus {
-	fill: var(--accent-text-color);
-}
-.clients-item:hover, .clients-item:focus {
+
+.clients-item .link:hover, .clients-item .link:focus {
 	border: 1px solid #2196F3;
 	border-radius: 4px;
 	fill: var(--accent-text-color);
@@ -565,6 +559,7 @@ a[href]:focus {
 	letter-spacing: 0.06em;
 	width: 200px;
 	height: 50px;
+	fill: var(--white-text-color);
 	}
 .email-item .button:hover, .email-item .button:focus {
 	color: var(--white-text-color);
@@ -572,4 +567,5 @@ a[href]:focus {
 
 .twitter-button {
 	margin-left: 10px;
+
 }
