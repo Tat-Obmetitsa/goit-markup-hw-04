@@ -373,7 +373,6 @@ img {
 .clients-item .link:hover,
 .clients-item .link:focus {
 	border: 1px solid #2196f3;
-	border-radius: 4px;
 	fill: var(--accent-text-color);
 }
 
