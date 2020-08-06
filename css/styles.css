@@ -149,10 +149,7 @@ img {
 	margin-left: 305px;
 	color: var(--primary-text-color);
 }
-.contacts-item .link {
-	display: flex;
-	fill: currentColor;
-}
+
 .envelope-icon {
 	background-size: 15px 10px;
 	margin-right: 10px;
@@ -178,6 +175,7 @@ img {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--secondary-text-color);
+	fill: currentColor;
 	text-decoration: none;
 	font-weight: 500;
 	font-size: 14px;
