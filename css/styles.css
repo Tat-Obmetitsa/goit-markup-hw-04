@@ -480,7 +480,7 @@ img {
 }
 
 .footer-navi {
-	margin-right: 69px;
+	margin-right: 70px;
 	width: 270px;
 }
 
@@ -493,6 +493,9 @@ img {
 	font-size: 14px;
 	line-height: 1.71;
 	text-decoration: none;
+}
+.address-list {
+	margin-top: 20px;
 }
 .address-list > span:not(:last-child): {
 	margin-bottom: 9px;
