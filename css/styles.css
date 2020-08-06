@@ -456,7 +456,9 @@ img {
 	line-height: 2;
 	letter-spacing: 0.06em;
 }
-
+.cards-text {
+	margin: 20px 24px;
+}
 .cards .text {
 	margin-top: 0;
 
