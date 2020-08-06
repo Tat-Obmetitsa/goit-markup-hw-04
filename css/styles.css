@@ -492,7 +492,9 @@ img {
 	line-height: 1.71;
 	text-decoration: none;
 }
-
+.address-list > span:not(:last-child): {
+	margin-bottom: 9px;
+}
 .address-text {
 	color: rgba(255, 255, 255, 0.6);
 	font-style: normal;
@@ -516,7 +518,7 @@ img {
 .networks-list {
 	display: flex;
 }
-.networks-item {
+.networks-item .link {
 	margin-top: 20px;
 	display: inline-flex;
 	justify-content: center;
@@ -528,8 +530,8 @@ img {
 	border-radius: 50%;
 	cursor: pointer;
 }
-.networks-item:hover,
-.networks-item:focus {
+.networks-item .link:hover,
+.networks-item .link:focus {
 	background-color: var(--accent-text-color);
 }
 .footer-icon {
