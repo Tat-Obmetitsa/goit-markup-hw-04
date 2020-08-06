@@ -149,25 +149,25 @@ img {
 	margin-left: 305px;
 	color: var(--primary-text-color);
 }
-.contacts-item {
+.contacts-item .link {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	fill: currentColor;
 }
-.contacts-item > svg {
-	display: flex;
-	background-color: #fff;
+.envelope-icon {
 	background-size: 15px 10px;
 	margin-right: 10px;
+	vertical-align: middle;
+}
+.phone-icon {
+	vertical-align: middle;
 }
 
 .contacts-item:not(:last-child) {
 	margin-right: 30px;
 }
 
-.contacts-item:hover,
-.contacts-item:focus {
+.contacts-item .link:hover,
+.contacts-item .link:focus {
 	fill: var(--accent-text-color);
 	color: var(--accent-text-color);
 	background-color: #fff;
