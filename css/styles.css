@@ -146,10 +146,12 @@ img {
 }
 .head-contacts {
 	display: flex;
-	margin-left: 305px;
 	color: var(--primary-text-color);
 }
-
+.head-links {
+	display: flex;
+	align-content: space-between;
+}
 .envelope-icon {
 	background-size: 15px 10px;
 	margin-right: 10px;
@@ -157,6 +159,7 @@ img {
 }
 .phone-icon {
 	vertical-align: middle;
+	margin-right: 10px;
 }
 
 .contacts-item:not(:last-child) {
@@ -169,9 +172,11 @@ img {
 	color: var(--accent-text-color);
 	background-color: #fff;
 }
-
+.head-contacts {
+	margin-left: 305px;
+}
 .head-contacts .link {
-	display: block;
+	display: inline-flex;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	color: var(--secondary-text-color);
