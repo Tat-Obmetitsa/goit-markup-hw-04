@@ -150,7 +150,6 @@ img {
 }
 .head-links {
 	display: flex;
-	align-content: space-between;
 }
 .envelope-icon {
 	background-size: 15px 10px;
