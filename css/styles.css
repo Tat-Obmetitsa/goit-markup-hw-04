@@ -291,7 +291,9 @@ img {
 .team {
 	background-color: var(--secondary-bcg-color);
 }
-
+.team.section {
+	padding-bottom: 94px;
+}
 .team-list {
 	display: flex;
 }
